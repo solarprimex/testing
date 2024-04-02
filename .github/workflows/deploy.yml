@@ -53,4 +53,4 @@ jobs:
         server: ${{ secrets.ftp_server }}
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: ./
+        server-dir: /public_html/testing.solarprimex.com/
