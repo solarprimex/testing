@@ -30,7 +30,7 @@
 #           password: ${{ secrets.ftp_password }}
 #           protocol: ${{ secrets.ftp_protocol }}
 #           local-dir: ./dist/
-
+#           .htaccess file must be in the public folder
 
 
 # For direct upload without build
@@ -53,7 +53,7 @@ jobs:
         server: ${{ secrets.ftp_server }}
         username: ${{ secrets.ftp_username2 }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/
-        # local-dir: ./dist/
+        server-dir: /public_html/testing.solarprimex.com/
+        # subdomain folder must be inside the public_html folder for app that does'nt reuire build
         
        
